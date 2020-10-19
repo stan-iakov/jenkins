@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spring-java-kubernetes-deployment
+  namespace: test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-java-kubernetes-deployment
+    spec:
+      containers:
+        - name: spring-java-kubernetes-container
+          image: jondow/jondow/spring-java-kubernetes:0.1
+          ports:
+            - containerPort: 8081
+      imagePullSecrets:
+        - name: regcred
