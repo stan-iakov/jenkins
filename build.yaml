@@ -32,10 +32,10 @@ spec:
 #      command:
 #        - cat
 #      tty: true
-  volumes:
+#  volumes:
 #    - name: dockersock
 #      hostPath:
 #        path: /var/run/docker.sock
-    - name: m2
-      hostPath:
-        path: /root/.m2
+#    - name: m2
+#      hostPath:
+#        path: /root/.m2
