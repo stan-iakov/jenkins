@@ -7,6 +7,9 @@ metadata:
     app: jnlp
 spec:
   containers:
+    - name: jnlp
+      image: jenkins/jnlp-slave:latest
+
     - name: maven
       image: maven:3.3.9-jdk-8-alpine
       command:
