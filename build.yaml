@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jnlp
+  name: maven
   namespace: default
   labels:
-    app: jnlp
+    app: maven
 spec:
   containers:
     - name: maven
