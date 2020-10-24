@@ -12,4 +12,13 @@ pipeline {
     }
   }
 
+  stages {
+    stage('execute'){
+      steps{
+        sh "echo stan"
+      }
+    }
+
+  }
+
 }
