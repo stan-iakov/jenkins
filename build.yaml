@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: jnlp
-  namespace: development
+  namespace: default
   labels:
     app: jnlp
 spec:
