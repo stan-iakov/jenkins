@@ -17,3 +17,4 @@ spec:
             - containerPort: 8081
       imagePullSecrets:
         - name: regcred
+      serviceAccountName: jenkins
