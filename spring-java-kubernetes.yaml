@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: spring-java-kubernetes-deployment
-  namespace: test
+  namespace: development
 spec:
   replicas: 1
   template:
