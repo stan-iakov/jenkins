@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: jnlp
-  namespace: default
+  namespace: development
   labels:
     app: jnlp
 spec:
@@ -32,6 +32,7 @@ spec:
 #      command:
 #        - cat
 #      tty: true
+  serviceAccountName: jenkins
 #  volumes:
 #    - name: dockersock
 #      hostPath:
